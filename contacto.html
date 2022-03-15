@@ -2,113 +2,62 @@
 <html lang="es">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>STC Servicios</title>
-	<link rel="stylesheet" href="css/index.css" />
-	<link rel="shortcut icon" href="imagenes/iconoLogo.jpeg">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>STC Contacto</title>
+	<link rel="stylesheet" href="./css/index.css" />
+	<link rel="shortcut icon" href="./public/img/iconoLogo.jpeg" />
 </head>
 
 <body>
 	<header>
-		<nav class="table">
-			<picture class="logo">
+		<nav class="navbar flex-row container">
+			<picture>
 				<a href="index.html" target="_self">
-					<img src="imagenes/logo.svg" alt="Logo" />
+					<img class="logo" src="./public/svg/logo.svg" alt="Logo" />
 				</a>
 			</picture>
-			<ul class="menu">
-				<li>
-					<a href="index.html" target="_self">
+			<ul class="menu flex-row">
+				<li class="menu__item"><a href="index.html" target="_self" class="menu__link">
 						<ion-icon name="home-outline"></ion-icon> Inicio
-					</a>
-				</li>
-				<li>
-					<a href="servicios.html" target="_self">
+					</a></li>
+				<li class="menu__item"><a href="servicios.html" target="_self" class="menu__link">
 						<ion-icon name="construct-outline"></ion-icon> Servicios
-					</a>
-				</li>
-				<li>
-					<a href="galeria.html" target="_self">
+					</a></li>
+				<li class="menu__item"><a href="galeria.html" target="_self" class="menu__link">
 						<ion-icon name="camera-outline"></ion-icon> Galeria
-					</a>
-				</li>
-				<li>
-					<a href="nosotros.html" target="_self">
+					</a></li>
+				<li class="menu__item"><a href="nosotros.html" target="_self" class="menu__link">
 						<ion-icon name="walk-outline"></ion-icon> Nosotros
-					</a>
-				</li>
-				<li>
-					<a class="paginaActiva" href="contacto.html" target="_self">
+					</a></li>
+				<li class="menu__item"><a href="contacto.html" target="_self" class="menu__link paginaActiva">
 						<ion-icon name="call-outline"></ion-icon> Contacto
-					</a>
-				</li>
+					</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<main>
-		<section class="contenedor contenedor_texto">
+		<section class="container container-md flex-column">
 			<h3>Formulario</h3>
-			<form>
-				<label for="nombre">Nombre</label>
-				<input type="text" name="nombre">
-				<br>
-				<label for="email">Email</label>
-				<input type="email" name="email">
-				<br>
-				<label for="email">Telefono</label>
-				<input type="number" name="telefono">
-				<br>
-				<label for="mensajes">Mensaje:</label>
-				<br><br>
-				<textarea name="consulta" rows="10" cols="10">Mensaje</textarea>
-				<br><br>
-				<input type="submit" value="Enviar">
-				<input type="reset" value="Limpiar Formulario">
-			</form>
-		</section>
-		<section class="contenedor">
-			<div class="contenedor_texto alineado_centro">
-				<h3>+ Estamos en:</h3>
-				<ul class="contenedor_texto--formato">
-					<li>
-						<ion-icon name="chevron-forward-circle-sharp"></ion-icon> Canelones
-					</li>
-					<li>
-						<ion-icon name="chevron-forward-circle-sharp"></ion-icon> Colonia
-					</li>
-					<li>
-						<ion-icon name="chevron-forward-circle-sharp"></ion-icon> Florida
-					</li>
-					<li>
-						<ion-icon name="chevron-forward-circle-sharp"></ion-icon> Montevideo
-					</li>
-					<li>
-						<ion-icon name="chevron-forward-circle-sharp"></ion-icon> San Jos&eacute;
-					</li>
-					<li>
-						<ion-icon name="chevron-forward-circle-sharp"></ion-icon> Soriano
-					</li>
-					<li>
-						<ion-icon name="chevron-forward-circle-sharp"></ion-icon> Tacuaremb&oacute;
-					</li>
-				</ul>
-			</div>
-			<picture class="contenedor_imagen alineado_izq">
-				<img class="contenedor_imagen--formato" src="imagenes/mapa.svg" alt="mapa de Uruguay">
-			</picture>
-		</section>
-		<section class="contenedor">
-			<picture class="contenedor_imagen alineado_der">
-				<img class="contenedor_imagen--formato" src="imagenes/horario.svg" alt="imagen de reloj">
-			</picture>
-			<div class="contenedor_texto alineado_centro">
-				<h3>+ Horarios:</h3>
-				<p class="contenedor_texto--formato">Lunes a Viernes de 08:00h a 19:00 <br> <br>
-					S&aacute;bados de 08:00h a 12:00h</p>
-			</div>
+                <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre">
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                    <br>
+                    <label for="email">Telefono</label>
+                    <input type="number" name="telefono">
+                    <br>
+                    <label for="mensajes">Mensaje:</label>
+                    <br><br>
+                    <textarea name="consulta" rows="10" cols="10">Mensaje</textarea>
+                    <br><br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar Formulario">
+                </form>
 		</section>
 	</main>
 	<footer>
@@ -120,11 +69,15 @@
 				<p>+598 92 432 612</p>
 			</div>
 			<div class="sub_contenedor_footer">
-				<h4>Email</h4>
+				<h4>
+					<ion-icon name="mail-outline"></ion-icon>Email
+				</h4>
 				<p>info&commat;stc.uy</p>
 			</div>
 			<div class="sub_contenedor_footer">
-				<h4>Direcci&oacute;n</h4>
+				<h4>
+					<ion-icon name="location-outline"></ion-icon>Direcci&oacute;n
+				</h4>
 				<p>Colonia, Uruguay</p>
 			</div>
 			<div class="sub_contenedor_footer">
