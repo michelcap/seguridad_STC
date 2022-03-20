@@ -1,11 +1,8 @@
 {
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Visual Studio Dark",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "files.autoSave": "afterDelay",
-    "[javascript]": {
-        "editor.defaultFormatter": "Zignd.html-css-class-completion"
-    },
     "editor.rulers": [
         144
     ],

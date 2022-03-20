@@ -5,33 +5,35 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>STC Contacto</title>
+	<title>STC Seguridad y Tecnolog&iacute;a</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="./css/index.css" />
 	<link rel="shortcut icon" href="./public/img/iconoLogo.jpeg" />
 </head>
 
 <body>
 	<header>
-		<nav class="navbar flex-row container">
-			<picture>
+		<nav class="navbar flex-row container-xxl">
+			<picture class="col-sm">
 				<a href="index.html" target="_self">
 					<img class="logo" src="./public/svg/logo.svg" alt="Logo" />
 				</a>
 			</picture>
-			<ul class="menu flex-row">
-				<li class="menu__item"><a href="index.html" target="_self" class="menu__link">
+			<ul class="col-sm menu row">
+				<li class="menu__item col-sm"><a href="index.html" target="_self" class="menu__link">
 						<ion-icon name="home-outline"></ion-icon> Inicio
 					</a></li>
-				<li class="menu__item"><a href="servicios.html" target="_self" class="menu__link">
+				<li class="menu__item col-sm"><a href="servicios.html" target="_self" class="menu__link">
 						<ion-icon name="construct-outline"></ion-icon> Servicios
 					</a></li>
-				<li class="menu__item"><a href="galeria.html" target="_self" class="menu__link">
+				<li class="menu__item col-sm"><a href="galeria.html" target="_self" class="menu__link">
 						<ion-icon name="camera-outline"></ion-icon> Galeria
 					</a></li>
-				<li class="menu__item"><a href="nosotros.html" target="_self" class="menu__link">
+				<li class="menu__item col-sm"><a href="nosotros.html" target="_self" class="menu__link">
 						<ion-icon name="walk-outline"></ion-icon> Nosotros
 					</a></li>
-				<li class="menu__item"><a href="contacto.html" target="_self" class="menu__link paginaActiva">
+				<li class="menu__item col-sm"><a href="contacto.html" target="_self" class="menu__link paginaActiva">
 						<ion-icon name="call-outline"></ion-icon> Contacto
 					</a></li>
 			</ul>
@@ -39,48 +41,52 @@
 	</header>
 
 	<main>
-		<section class="container container-md flex-column">
-			<h3>Formulario</h3>
-                <form>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre">
-                    <br>
-                    <label for="email">Email</label>
-                    <input type="email" name="email">
-                    <br>
-                    <label for="email">Telefono</label>
-                    <input type="number" name="telefono">
-                    <br>
-                    <label for="mensajes">Mensaje:</label>
-                    <br><br>
-                    <textarea name="consulta" rows="10" cols="10">Mensaje</textarea>
-                    <br><br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpiar Formulario">
-                </form>
+		<section class="container-xl my-5">
+			<form>
+				<div class="mb-3">
+					<label for="nombre" class="form-label">Nombre</label>
+					<input type="text" class="form-control" name="nombre">
+				</div>
+				<div class="mb-3">
+					<label for="email" class="form-label">Email</label>
+					<input type="email" class="form-control" name="email">
+				</div>
+				<div class="mb-3">
+					<label for="email" class="form-label">Telefono</label>
+					<input type="number" class="form-control" name="telefono">
+				</div>
+				<div class="mb-3">
+					<label for="mensajes" class="form-label">Mensaje</label>
+					<textarea name="consulta" class="form-control" rows="10" cols="10"></textarea>
+				</div>
+				<div class="mb-3">
+					<input class="btn btn-primary" type="submit" value="Enviar">
+					<input class="btn btn-primary" ype="reset" value="Limpiar Formulario">
+				</div>
+			</form>
 		</section>
 	</main>
 	<footer>
-		<div class="contenedor_footer">
-			<div class="sub_contenedor_footer">
+		<div class="container-xxl row sub_contenedor_footer">
+			<div class="col-sm justify-content-around sub_contenedor_footer">
 				<h4>
 					<ion-icon name="call-outline"></ion-icon>Telefono
 				</h4>
 				<p>+598 92 432 612</p>
 			</div>
-			<div class="sub_contenedor_footer">
+			<div class="col-sm justify-content-around sub_contenedor_footer">
 				<h4>
 					<ion-icon name="mail-outline"></ion-icon>Email
 				</h4>
 				<p>info&commat;stc.uy</p>
 			</div>
-			<div class="sub_contenedor_footer">
+			<div class="col-sm justify-content-around sub_contenedor_footer">
 				<h4>
 					<ion-icon name="location-outline"></ion-icon>Direcci&oacute;n
 				</h4>
 				<p>Colonia, Uruguay</p>
 			</div>
-			<div class="sub_contenedor_footer">
+			<div class="col-sm justify-content-around sub_contenedor_footer">
 				<h4>Redes</h4>
 				<p class="redes">
 					<ion-icon name="logo-linkedin"></ion-icon>
@@ -92,6 +98,9 @@
 		<h2 class="titulo_final">&copy; STC Seguridad y Tecnolog&iacute;a</h2>
 	</footer>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
