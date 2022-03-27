@@ -1,0 +1,13 @@
+.servicios-item {
+	padding: $padding-sm;
+	text-align: center;
+	justify-content: center;
+	transition: all 2s;
+	border: 1px solid $colorPrincipal;
+
+	&:hover {
+		font-size: $text-md;
+		font-weight: bold;
+		background: linear-gradient(to top, $colorPrincipalAl50, $colorSecundario);
+	}
+}

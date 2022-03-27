@@ -1,0 +1,495 @@
+/***** IMPORT FONTS *****/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'
+
+/***** VARIABLES *****/
+
+/* :root {
+	$colorPrincipal: #0065b7;
+	$colorSecundario: #f5f5f5;
+	$colorPrincipalAl50: rgb(0, 101, 183, 0.5
+	$fontPrincipal: 'Raleway', sans-serif;
+	$fontSecundaria: Verdana, Helvetica;
+	$text-xlg: 3em;
+	$text-lg: 2.4em;
+	$text-md: 1.6em;
+	$text-sm: 1.2em;
+	$section-xlg: 100vh;
+	$section-lg: 75vh;
+	$section-md: 50vh;
+	$section-sm: 25vh;
+	$padding-lg: 3rem;
+	$padding-md: 2rem;
+	$padding-sm: 1rem;
+	$padding-xsm: 0.2rem;
+	$bs-body-font-size: 1.3rem;
+} */
+
+/***** RESET *****/
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.navbar {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+ol, ul {
+    padding: 0px;
+}
+
+/***** GLOBALS *****/
+/*
+html {
+	font-size: 62.5%;
+	width: 100%;
+}*/
+
+/* body {
+	font-family: $fontPrincipal
+	background-color: $colorSecundario
+	color: $colorPrincipal
+} */
+
+section {
+    display: flex;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* a {
+	text-decoration: none;
+	color: $colorPrincipal
+	display: inline-block;
+} */
+
+
+/***** HELPERS *****/
+.flex__center {
+	display: flex;
+	justify-items: center;
+	justify-content: center;
+}
+
+.flex__left {
+	display: flex;
+	justify-items: left;
+	justify-content: left;
+}
+
+.flex__right {
+	display: flex;
+	justify-items: right;
+	justify-content: right;
+}
+
+.flex-row {
+	display: flex;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+/*
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.container-lg {
+	min-height: $section-lg
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container-md {
+	min-height: $section-md
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container-sm {
+	min-height: $section-sm
+	align-items: center;
+	justify-content: space-between;
+}
+*/
+/***** HEDER *****/
+
+/* header {
+	background: url('..//public/img/header.jpg'), $colorSecundario
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: $section-lg
+} */
+/* 
+header .navbar {
+	justify-content: space-between;
+	align-items: center;
+	padding: $padding-sm0px;
+}
+
+header .logo {
+	min-height: 21vh;
+}
+
+header .menu {
+	flex-basis: 50%;
+	justify-content: end;
+} */
+/* 
+header .menu__item .menu__link {
+	font-weight: bold;
+	text-shadow: 1px 1px 2px $colorSecundario), -1px -1px 2px $colorSecundario
+	padding: $padding-sm0px;
+	width: 100%;
+}
+
+header .menu__link:hover {
+	text-decoration: underline 3px $colorSecundario
+}
+
+header .paginaActiva {
+	text-decoration: underline 3px $colorSecundario
+} */
+
+/***** MAIN *****/
+.formato-img {
+	width: 100%;
+}
+
+.formato-img_reloj {
+	width: 50%;
+}
+
+.formato-txt {
+	margin: auto;
+	width: 100%;
+}
+
+.formato-lista {
+	width: 100%;
+}
+/* 
+.formato-txt p {
+	padding: $padding-sm
+	text-align: justify;
+}
+
+.formato-txt h3 {
+	padding: $padding-sm
+}
+
+.camioneta {
+	width: 100%;
+	animation-name: efectoCamioneta;
+	animation-timing-function: ease-out;
+	animation-duration: 8s;
+	animation-delay: 5s;
+	position: relative;
+	padding: $padding-md
+}
+
+@keyframes efectoCamioneta {
+	0% {
+		left: -1080px;
+	}
+	100% {
+		left: 0px;
+	}
+} */
+
+/***** SERVICIOS *****/
+/* .servicios-item {
+	padding: $padding-sm
+	text-align: center;
+	justify-content: center;
+	transition: all 2s;
+	border: 1px solid $colorPrincipal
+}
+
+.servicios-item:hover {
+	font-size: $text-md
+	font-weight: bold;
+	background: linear-gradient(to top, $colorPrincipalAl50), $colorSecundario)
+} */
+
+/***** Galeria *****/
+/* 
+.container__galeria {
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(3, 1fr
+	grid-template-rows: repeat(2, 1fr
+	grid-template-areas:
+		'img1	img2	img3'
+		'img4	img5	img6';
+}
+.container__galeria img {
+	width: $section-sm
+	transition: 0.5s ease-in-out;
+}
+
+.container__galeria .img1 {
+	grid-area: img1;
+}
+.container__galeria .img2 {
+	grid-area: img2;
+}
+.container__galeria .img3 {
+	grid-area: img3;
+}
+.container__galeria .img4 {
+	grid-area: img4;
+}
+.container__galeria .img5 {
+	grid-area: img5;
+}
+.container__galeria .img6 {
+	grid-area: img6;
+}
+
+.container__galeria img:hover{
+	width: $section-md
+	transition: width 0.5s ease-in-out;
+} */
+
+/***** Nosotros *****/
+
+.container__nosotros {
+	text-align: justify;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+}
+/* 
+.container__nosotros h3 {
+	padding: $padding-md
+} */
+
+/****** CONTACTO *****/
+form {
+	width: 100%;
+}
+
+/****** FOOTER *****/
+/* 
+footer {
+	background: #0065b7;
+	padding: $padding-md0 $padding-md0;
+	margin: auto;
+	letter-spacing: 2px;
+}
+
+.sub_contenedor_footer {
+	justify-items: center;
+	justify-content: center;
+	margin: $padding-smauto;
+}
+.sub_contenedor_footer h4 {
+	color: #fff;
+	margin-bottom: $padding-xsm
+}
+.sub_contenedor_footer p {
+	color: #fff;
+}
+
+.redes ion-icon {
+	font-size: $text-lg
+}
+
+.titulo_final {
+	text-align: center;
+	font-size: $text-lg
+	margin: $padding-sm0 0 0;
+	color: #fff;
+} */
+
+/***** MEDIA QUERIE *****/
+/*
+@media only screen and (max-width: 320px{
+	/***** HELPERS *****/
+/*
+	:root {
+		$text-xlg: 1.3em;
+		$text-lg: 1em;
+		$text-md: 0.9em;
+		$text-sm: 0.8em;
+		$section-xlg: 45vh;
+		$section-lg: 35vh;
+		$section-md: 25vh;
+		$section-sm: 15vh;
+		$padding-lg: 0.9rem;
+		$padding-md: 0.6rem;
+		$padding-sm: 0.3rem;
+	}
+
+	/***** HEDER *****/
+/*
+	header {
+		min-height: $section-xlg
+	}
+
+	.flex-row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	header .navbar picture {
+		justify-content: left;
+	}
+
+	header .logo {
+		min-height: $section-md
+	}
+
+	header .menu__item .menu__link {
+		font-size: $text-xlg
+		font-weight: bold;
+		padding: $padding-sm
+		text-shadow: $colorSecundario1px 1px 2px;
+	}
+
+	/***** MAIN *****/
+/*
+	.formato-img_reloj {
+		width: 30%;
+	}
+
+	.formato-lista {
+		width: 30%;
+	}
+
+	.formato-txt p {
+		padding: $padding-md
+		text-align: justify;
+	}
+
+	.formato-txt h3 {
+		padding: $padding-md
+	}
+
+	.formato-img__camioneta {
+		width: 60%;
+		animation-name: efectoCamioneta;
+		animation-timing-function: ease-out;
+		animation-duration: 8s;
+		animation-delay: 5s;
+		position: relative;
+		padding: $padding-md
+	}
+
+	@keyframes efectoCamioneta {
+		0% {
+			left: -200px;
+		}
+		100% {
+			left: 0px;
+		}
+	}
+
+	.contenedor_footer {
+		flex-direction: column;
+	}
+
+	.sub_contenedor_footer h4 {
+		padding-top: $padding-lg
+	}
+
+	/***** NOSOTROS *****/
+/*	
+	.container__nosotros h3,
+	p {
+		padding: $padding-lg
+	}
+
+	.redes ion-icon {
+		font-size: 3em;
+	}
+
+	/***** Galeria *****/
+/*	
+	.container__galeria {
+		display: grid;
+		align-items: center;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 1fr
+		grid-template-areas:
+			'img1'
+			'img2'
+			'img3'
+			'img4'
+			'img5'
+			'img6';
+	}
+
+	.container__galeria img {
+		width: $section-md
+		transition: 0.5s ease-in-out;
+	}
+
+	.container__galeria img:hover{
+		width: $section-xlg
+		transition: width 0.5s ease-in-out;
+	}
+}*/
+@media only screen and (max-width: 1080px{
+	/***** Galeria *****/
+	.container__galeria {
+		display: grid;
+		align-items: center;
+		grid-template-columns: repeat(2, 1fr
+		grid-template-rows: repeat(3, 1fr
+		grid-template-areas:
+		'img1 img2'
+		'img3 img4'
+		'img5 img6';
+
+			
+	}
+/* 
+	.container__galeria img {
+		width: $section-sm
+		transition: 0.5s ease-in-out;
+	}
+
+	.container__galeria img:hover{
+		width: $section-md
+		transition: width 0.5s ease-in-out;
+	} */
+}
+
+@media only screen and (max-width: 520px{
+	/***** Galeria *****/
+	.container__galeria {
+		display: grid;
+		align-items: center;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 1fr
+		grid-template-areas:			
+			'img1'
+			'img2'
+			'img3'
+			'img4'
+			'img5'
+			'img6';
+	}
+/* 
+	.container__galeria img {
+		width: $section-sm
+		transition: 0.5s ease-in-out;
+	}
+
+	.container__galeria img:hover{
+		width: $section-md
+		transition: width 0.5s ease-in-out;
+	} */
+}

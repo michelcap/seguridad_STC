@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'
 
 /* General */
 * {
@@ -42,7 +42,7 @@ header {
 	padding: 0px;
 	overflow: hidden;
 	background: #fff;
-	background: url('..//imagenes/header.jpg');
+	background: url('..//imagenes/header.jpg'
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;

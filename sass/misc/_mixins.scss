@@ -1,0 +1,62 @@
+.flex__center {
+	display: flex;
+	justify-items: center;
+	justify-content: center;
+}
+
+.flex__left {
+	display: flex;
+	justify-items: left;
+	justify-content: left;
+}
+
+.flex__right {
+	display: flex;
+	justify-items: right;
+	justify-content: right;
+}
+
+.flex-row {
+	display: flex;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.formato-img {
+	width: 100%;
+
+	&__reloj {
+		width: 50%;
+	}
+
+	&__camioneta {
+		width: 100%;
+		animation-name: efectoCamioneta;
+		animation-timing-function: ease-out;
+		animation-duration: 8s;
+		animation-delay: 5s;
+		position: relative;
+		padding: $padding-md
+	}
+}
+
+.formato-txt {
+	margin: auto;
+	width: 100%;
+
+	p {
+		padding: $padding-sm;
+		text-align: justify;
+	}
+
+	h3 {
+		padding: $padding-sm
+	}
+}
+
+.formato-lista {
+	width: 100%;
+}
