@@ -465,6 +465,6 @@ form {
   border-bottom-right-radius: 0px;
   /* uso de get-map */ }
   .btn-clear:active {
-    box-shadow: -map-get((-xxl: 3.5rem, -xl: 2.95rem, -lg: 2.4rem, -md: 1.85rem, -sm: 1.3rem, -xsm: 0.75rem, -xxsm: 0.2rem, -cero: 0rem, -auto: auto), -xl) 0px #0065b7; }
+    box-shadow: -2.95rem 0px #0065b7; }
 
 /* _contacto.scss END */

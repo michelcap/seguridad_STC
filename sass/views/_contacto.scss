@@ -61,7 +61,7 @@ form {
 	
 	/* uso de get-map */
 	&:active {
-		box-shadow: -map-get($option-mesure,-xl) 0px $colorPrincipal;
+		box-shadow: - map-get($option-mesure,-xl) 0px $colorPrincipal;
 	}
 }
 /* _contacto.scss END */
