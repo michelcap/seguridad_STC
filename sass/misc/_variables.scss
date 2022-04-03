@@ -1,5 +1,7 @@
+/* _variables.scss START */
 $colorPrincipal: #0065b7;
 $colorSecundario: #f5f5f5;
+$colorTerciario: #ced4da;
 $colorPrincipalAl50: rgba(0, 101, 183, 0.5);
 $fontPrincipal: 'Raleway', sans-serif;
 $fontSecundaria: Verdana, Helvetica;
@@ -11,8 +13,38 @@ $section-xlg: 100vh;
 $section-lg: 75vh;
 $section-md: 50vh;
 $section-sm: 25vh;
-$padding-lg: 3rem;
-$padding-md: 2rem;
-$padding-sm: 1rem;
-$padding-xsm: 0.2rem;
-$bs-body-font-size: 1.3rem;
+$option-mesure: (-xxl: 3.5rem, -xl: 2.95rem, -lg: 2.4rem, -md: 1.85rem, -sm: 1.3rem, -xsm: 0.75rem, -xxsm: 0.2rem, -cero: 0rem, -auto: auto);
+$max-width: 100%;
+
+/* uso de each */
+@each $name, $mesure in $option-mesure {
+	.m-BOTO-#{$name} {
+		margin-bottom: $mesure;
+		margin-top: $mesure;
+	}
+}
+
+/* uso de each */
+@each $name, $mesure in $option-mesure {
+	.m-RL-#{$name} {
+		margin-right: $mesure;
+		margin-left: $mesure;
+	}
+}
+
+/* uso de each */
+@each $name, $mesure in $option-mesure {
+	.p-BOTO-#{$name} {
+		padding-bottom: $mesure;
+		padding-top: $mesure;
+	}
+}
+
+/* uso de each */
+@each $name, $mesure in $option-mesure {
+	.p-RL-#{$name} {
+		padding-right: $mesure;
+		padding-left: $mesure;
+	}
+}
+/* _variables.scss END */

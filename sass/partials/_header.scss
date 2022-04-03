@@ -1,3 +1,4 @@
+/* header.scss START */
 header {
 	background: url('..//public/img/header.jpg'), $colorSecundario;
 	background-size: cover;
@@ -7,7 +8,6 @@ header {
 	.navbar {
 		justify-content: space-between;
 		align-items: center;
-		padding: $padding-sm 0px;
 	}
 
     .logo {
@@ -15,21 +15,19 @@ header {
     }
 
     .menu {
-        flex-basis: 50%;
+        flex-basis: $max-width/2;
         justify-content: end;
 
         &__item {
             font-weight: bold;
             text-shadow: 1px 1px 2px $colorSecundario, -1px -1px 2px $colorSecundario;
-            padding: $padding-sm 0px;
-            width: 100%;
+            width: $max-width;
         }
         
         &__link{
             font-weight: bold;
             text-shadow: 1px 1px 2px $colorSecundario, -1px -1px 2px $colorSecundario;
-            padding: $padding-sm 0px;
-            width: 100%;
+            width: $max-width;
             
             &:hover {
                 text-decoration: underline 3px $colorSecundario;
@@ -41,3 +39,4 @@ header {
         text-decoration: underline 3px $colorSecundario;
     }
 }
+/* header.scss END */

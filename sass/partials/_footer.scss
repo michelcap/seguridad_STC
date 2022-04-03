@@ -1,18 +1,15 @@
+/* footer.scss START */
 footer {
 	background: $colorPrincipal;
-	padding: $padding-md $padding-md;
-	margin: auto;
 	letter-spacing: 2px;
 }
 
 .sub_contenedor_footer {
 	justify-items: center;
 	justify-content: center;
-	margin: $padding-sm auto;
 
 	h4 {
 		color: $colorSecundario;
-		margin-bottom: $padding-xsm
 	}
 
 	p {
@@ -25,8 +22,7 @@ footer {
 }
 
 .titulo_final {
-	text-align: center;
 	font-size: $text-lg;
-	margin: $padding-sm;
 	color: $colorSecundario;
 }
+/* footer.scss START */

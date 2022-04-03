@@ -1,11 +1,8 @@
+/* _gnosotros.scss START */
 .container__nosotros {
 	text-align: justify;
 	letter-spacing: 1.5px;
 	font-weight: bold;
-
-    h3 {
-        padding: $padding-md;
-    }
 }
 
 @media only screen and (max-width: 1080px){
@@ -22,3 +19,4 @@
 	    flex-direction: column;
     }
 }
+/* _gnosotros.scss END */

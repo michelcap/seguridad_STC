@@ -1,27 +1,32 @@
+/* _normalize.scss START */
+/* uso de get-map */
 *,
 *::after,
 *::before {
-	margin: 0px;
-	padding: 0px;
+	margin: map-get($option-mesure,-cero);
+	padding: map-get($option-mesure,-cero);
 	box-sizing: border-box;
 }
 
+/* uso de get-map */
 .navbar {
-	padding-left: 0px;
-	padding-right: 0px;
+	padding-left: map-get($option-mesure,-cero);
+	padding-right: map-get($option-mesure,-cero);
 }
 
 section {
 	display: flex;
 }
 
+/* uso de get-map */
 ul {
 	list-style-type: none;
-    padding: 0px;
+    padding: map-get($option-mesure,-cero);
 }
 
+/* uso de get-map */
 ol{
-    padding: 0px;
+    padding: map-get($option-mesure,-cero);
 }
 
 a {
@@ -35,6 +40,7 @@ body {
 	background-color: $colorSecundario;
 	color: $colorPrincipal;
 }
+/* _normalize.scss END */
 
 
 

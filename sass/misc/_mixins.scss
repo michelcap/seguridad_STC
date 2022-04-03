@@ -1,37 +1,66 @@
-.flex__center {
+/* _mixins.scss START */
+%flex {
 	display: flex;
-	justify-items: center;
-	justify-content: center;
+	flex-wrap: wrap;
+
+	& > * {
+		box-sizing: border-box;
+		flex-shrink: 0;
+		width: $max-width;
+		max-width: $max-width;
+	}
 }
 
-.flex__left {
-	display: flex;
-	justify-items: left;
-	justify-content: left;
+%cien {
+	width: $max-width;
 }
 
-.flex__right {
-	display: flex;
-	justify-items: right;
-	justify-content: right;
+/* uso de mixin */
+@mixin justify($content) {
+	justify-items: $content;
+	justify-content: $content;
+	text-align: $content;
+}
+
+/* uso de extend */
+/* uso de get-map */
+.container {
+	@extend %cien;
+	padding-right: map-get($option-mesure,-sm);
+	padding-left: map-get($option-mesure,-sm);
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.center {
+	@include justify(center);
+}
+
+.left {
+	@include justify(left);
+}
+
+.right {
+	@include justify(right);
 }
 
 .flex-row {
-	display: flex;
+	@extend %flex;
 }
 
 .flex-column {
-	display: flex;
+	@extend %flex;
 	flex-direction: column;
 }
 
 .formato-img {
-	width: 100%;
+	@extend %cien;
 
 	&__reloj {
-		width: 50%;
+		width: $max-width/2;
 	}
 
+	/* uso de get-map */
 	&__camioneta {
 		width: 100%;
 		animation-name: efectoCamioneta;
@@ -39,24 +68,34 @@
 		animation-duration: 8s;
 		animation-delay: 5s;
 		position: relative;
-		padding: $padding-md
+		padding: map-get($option-mesure,-md);
 	}
 }
 
 .formato-txt {
-	margin: auto;
-	width: 100%;
+	@extend %cien;
 
+	/* uso de get-map */
 	p {
-		padding: $padding-sm;
+		padding: map-get($option-mesure,-sm);
 		text-align: justify;
-	}
-
-	h3 {
-		padding: $padding-sm
 	}
 }
 
 .formato-lista {
-	width: 100%;
+	@extend %cien;
 }
+
+
+
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1320px;
+	}
+}
+
+@media (min-width: 576px) {
+	.small {
+	flex: 1 0 0%;
+}}
+/* _mixins.scss END */

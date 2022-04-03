@@ -1,9 +1,11 @@
+/* _servicios.scss START */
 .servicios-item {
-	padding: $padding-sm;
 	text-align: center;
 	justify-content: center;
 	transition: all 2s;
 	border: 1px solid $colorPrincipal;
+	flex: 0 0 auto;
+	width: $max-width;
 
 	&:hover {
 		font-size: $text-md;
@@ -11,3 +13,16 @@
 		background: linear-gradient(to top, $colorPrincipalAl50, $colorSecundario);
 	}
 }
+
+@media (min-width: 720px) {
+	.servicios-item {
+		width: $max-width/2;
+	}
+}
+
+@media (min-width: 1024px) {
+	.servicios-item {
+		width: $max-width/3;
+	}
+}
+/* _servicios.scss END */

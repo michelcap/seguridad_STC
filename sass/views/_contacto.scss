@@ -1,3 +1,67 @@
+/* _contacto.scss START */
 form {
-	width: 100%;
+	width: $max-width;
+
+	label {
+		font-size: $text-sm;
+	}
 }
+
+/* uso de get-map */
+%form-style {
+	font-size: $text-sm;
+	border: 1px solid $colorTerciario;
+	border-radius: map-get($option-mesure,-sm);;
+}
+
+/* uso de extend */
+.form-input {
+	@extend %form-style;
+	color: black;
+	display: block;
+	background-color: $colorSecundario;
+	background-clip: padding-box;
+	width: $max-width;			
+}
+
+/* uso de extend */
+.btn {
+	@extend %form-style;
+	color: $colorTerciario;
+	display: inline-block;	
+	background-color: $colorPrincipal;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+
+	&:hover {
+		color: $colorPrincipal;
+		background-color: $colorTerciario;
+	}
+
+	&:active {
+		background-color: $colorTerciario;
+	}
+}
+
+.btn-send {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	
+	/* uso de get-map */
+	&:active {
+  		box-shadow: map-get($option-mesure,-xl) 0px $colorPrincipal;
+	}
+}
+
+.btn-clear {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	
+	/* uso de get-map */
+	&:active {
+		box-shadow: -map-get($option-mesure,-xl) 0px $colorPrincipal;
+	}
+}
+/* _contacto.scss END */
