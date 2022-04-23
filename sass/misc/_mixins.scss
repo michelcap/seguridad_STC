@@ -26,8 +26,8 @@
 /* uso de get-map */
 .container {
 	@extend %cien;
-	padding-right: map-get($option-mesure,-sm);
-	padding-left: map-get($option-mesure,-sm);
+	padding-right: map-get($option-mesure,-md);
+	padding-left: map-get($option-mesure,-md);
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -69,6 +69,10 @@
 		animation-delay: 5s;
 		position: relative;
 		padding: map-get($option-mesure,-md);
+	}
+
+	&__servicios {
+		width: $max-width/2;
 	}
 }
 
