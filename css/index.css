@@ -273,7 +273,6 @@ header {
   background-attachment: fixed;
   min-height: 75vh; }
   header .navbar {
-    justify-content: space-between;
     align-items: center; }
   header .logo {
     min-height: 21vh; }
